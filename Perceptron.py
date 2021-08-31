@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 """
 Created on Sat Jan 16 12:25:28 2021
 
@@ -24,13 +24,13 @@ class Perceptron(object):
     errors_: list 
         Number of misclassifications (updates) in each epoch.
     """
-    def __init__(self,eta=0.01,n_iter=50,random_state=1): #constructor
+    def __init__(self, eta: float = 0.01, n_iter: int = 50, random_state: int = 1): #constructor
         self.eta=eta
         self.n_iter=n_iter
         self.random_state=random_state
     
     #metodo de entrenamiento
-    def fit(self,X,y):
+    def fit(self, X, y):
         """Fit training data
         
         Parameters
